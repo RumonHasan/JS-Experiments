@@ -1,8 +1,8 @@
 const buttonContainer = document.querySelector('.button-container');
 const contentElements = document.querySelectorAll('.parent-content');
-
 let contentElementContent = {};
 let allContentHtml = [];
+// extracting the content inner htmls
 contentElements.forEach((content) => {
   const htmlContent = content.innerHTML;
   allContentHtml.push(htmlContent);
@@ -20,6 +20,7 @@ function main() {
 }
 main();
 
+// injecting basic html buttons
 function injectButtons() {
   for (let index = 0; index < list.length; index++) {
     const buttonElement = document.createElement('button');
@@ -33,6 +34,7 @@ function injectButtons() {
 // adding listeners to buttons
 const buttonElements = document.querySelectorAll('.button');
 
+// adding filtering and updating button state
 buttonElements.forEach((button) => {
   button.addEventListener('click', () => {
     const buttonId = button.getAttribute('id');
