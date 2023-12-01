@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  max-width: 60%;
+  width: 80%;
+  height: 80%;
+  background-color: rgb(19, 17, 15);
+  border-radius: 30px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.button-container {
+  display: flex;
+  gap: 1em;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: black;
+  color: white;
+}
+
+.hide {
+  display: none;
+  visibility: none;
+  opacity: 0;
+}
+.show {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+.content-container {
+  background-color: black;
+  padding: 16px;
+  border-radius: 30px;
+  transition: 450ms ease-in-out;
+}
+
+.parent-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
