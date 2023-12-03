@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  height: 80%;
+  width: 80%;
+  background-color: rgb(40, 39, 39);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  flex-direction: column;
+}
+
+.input-container {
+  height: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.container input {
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 2px solid white;
+}
+
+.container button {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.todo {
+  border: 2px solid white;
+  width: 300px;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  border-radius: 20px;
+}
+
+.todo p {
+  font-size: 20px;
+}
